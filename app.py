@@ -1,14 +1,5 @@
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
-import os
-
-# Load environment file, assign variables
-from dotenv import load_dotenv
-load_dotenv()
-
-account_sid = os.environ["account_sid"]
-auth_token = os.environ["auth_token"]
-my_cell = os.environ["my_cell"]
 
 app = Flask(__name__)
 
